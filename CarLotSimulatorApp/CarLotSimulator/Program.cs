@@ -56,7 +56,15 @@ namespace CarLotSimulator
 
             thirdCar.MakeHonkNoise();
 
-            foreach(var car in parkingLot.ParkingLot)
+            var fourthCar = new Car();
+
+            var fifthCar = new Car();
+
+            var sixthCar = new Car();
+
+            Console.WriteLine(CarLot.numberOfCars);
+
+            foreach(var car in parkingLot.ParkingLot) //leave the foreach on the bottom or it could mess with the numberOfCars counter
             {
                 Console.WriteLine($"This car is a {car.Year} {car.Make} {car.Model}.");
             }

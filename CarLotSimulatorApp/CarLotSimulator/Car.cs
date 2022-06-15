@@ -5,17 +5,22 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
         }
 
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
         {
+            CarLot.numberOfCars++;
+
             Year = year;
             Make = make;
             Model = model;
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+
+
+            
         }
 
         public int Year { get; set; }
